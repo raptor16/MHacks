@@ -1,5 +1,5 @@
-double channel0[2]; //throttle receiver
-double channel1[2]; //rudder receiver
+double channel0; //throttle receiver
+double channel1; //rudder receiver
 double x0;
 double x1;
 int elevator = 3;
@@ -24,7 +24,7 @@ void setup() {
 }
 
 void loop () {
-  func (0.1, 0.5, 0.7, -0.5);
+  func (2000, 2000, 2500, 2500);
 }
 
 void func (double wiirightelev,
